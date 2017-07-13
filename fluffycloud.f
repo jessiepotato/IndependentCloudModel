@@ -166,7 +166,7 @@ C        telak = pg
       allocate( meansize(0) )
       allocate( numberden(0) )
 !
-      open (unit=20,file="wedout.txt",action="write",status="replace") ! FOR TESTING
+C      open (unit=20,file="cloudout.txt",action="write",status="replace") ! FOR TESTING
 !
 !     give some arrays some initial values (ideally from PHOENIX input...)
       Tz = [ Tz, teplota(size(teplota)) ]
@@ -241,14 +241,14 @@ C        lapse_rate = GRADI(Pz(size(Pz)))*(-rho_a*g_jup)*1.d1 ! I think the new 
           numberden = [ numberden, 0.d0 ]
         endif
 !
-      write (20,*) i, Pz(i), Tz(i), meansize(i) ! FOR TESTING
+C      write (20,*) i, Pz(i), Tz(i), meansize(i) ! FOR TESTING
       i = i+1
       enddo
 C      do i = 1, size(temp)
 C        print *, i, temp(i)! Pz(i), Tz(i), meansize(i)
 C        write (6,*) i, temp(i)!
 C      enddo
-      close (20) ! FOR TESTING
+C      close (20) ! FOR TESTING
 !
       end subroutine FLUFFY
 !
