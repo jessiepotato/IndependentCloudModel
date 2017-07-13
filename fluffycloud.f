@@ -1,12 +1,12 @@
       module fluffycloud
-C        use phoenix_variables
+        use phoenix_variables
         implicit none
-        include 'physconst.inc' ! Rgas is in erg K-1 mol-1 (convert to J by x10^-7)
-        include 'cloudvars_phoenix.inc'
-        include 'declaration_phoenix.inc'
-C        include 'cloudvars.inc'
-C        include 'declaration.inc'
-        include 'param.inc'
+C        include 'physconst.inc' ! Rgas is in erg K-1 mol-1 (convert to J by x10^-7)
+C        include 'cloudvars_phoenix.inc'
+C        include 'declaration_phoenix.inc'
+        include 'cloudvars.inc'
+        include 'declaration.inc'
+C        include 'param.inc'
 !
         real*8, dimension (:), allocatable :: teplota,telak ! temperature, pressure
         real*8, dimension (:), allocatable :: stredni,cislo ! mean radius, number density

@@ -28,4 +28,4 @@ wrapper.o: wrapper.f
 # all: ; $(info $$var is [${var}])echo Hello world
 
 clean:
-	rm -r *.o *.mod phxout.txt outfluff.txt fluffy
+	rm -r *.o *.mod fluffy
